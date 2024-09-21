@@ -21,8 +21,13 @@ class MovieRepositoryImplementation: MoviesRepository {
         networkService.sendRequest(url: GalaryEndPoints.videoListing.url!, headerValue: RequestHeaders.getDefaultHeaders(), for: MoviesListResponse.self) { result in
             switch result {
             case .success(let data):
+                UserInfoUtilities<MoviesListResponse>.saveModelInUserDefaults(key: "movies", userInfo: data)
                 completion(.success(data))
             case .failure(let error):
+                if let response = UserInfoUtilities<MoviesListResponse>.loadModelFromUserDefaults(key: "movies").usersInfo {
+                    completion(.success(response))
+                    return
+                }
                 completion(.failure(error))
             }
         }

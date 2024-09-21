@@ -15,6 +15,10 @@ class NetworkService {
     enum HeaderContentType: String {
         case contentType = "Content-Type"
     }
+    
+    enum CustomError: Error {
+        case message(String)
+    }
 
     /// Used to switch between live and Mock Data
     /// in object-oriented programming, mock objects are simulated objects that mimic the behavior of real objects in controlled ways, most often as part of a software testing initiative.
@@ -92,7 +96,7 @@ class NetworkService {
         
         self.networkClient.loadData(using: request) { (data, response, error) in
             guard let data = data else {
-                completion(.failure(error?.localizedDescription as! Error))
+                completion(.failure(CustomError.message(error?.localizedDescription ?? "no data found") as Error))
                 return
             }
             let list = self.decode(to: T.self, data: data)

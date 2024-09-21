@@ -32,6 +32,7 @@ class MoviesListingVC: MMDBaseVC {
             self?.updatedResponse(response: response)
         }
         viewModel.errorMessage.observe =  { [weak self] error in
+            self?.showAlert(withTitle: "Alert", message: error?.description ?? "no data found")
             print(error as Any)
         }
     }

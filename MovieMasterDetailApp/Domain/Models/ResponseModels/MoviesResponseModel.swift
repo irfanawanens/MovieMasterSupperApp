@@ -66,23 +66,6 @@ struct MovieAttributes : Codable {
         case vote_average = "vote_average"
         case vote_count = "vote_count"
     }
-    
-    init(id : Int?, title : String?, video : Bool?, adult : Bool?, backdrop_path : String?, genre_ids : [Int]?, original_language : String?, original_title : String?, overview : String?, popularity : Double?, poster_path : String?, release_date : String?, vote_average : Double?, vote_count : Int?) {
-        self.id = id
-        self.title = title
-        self.video = video
-        self.adult = adult
-        self.backdrop_path = backdrop_path
-        self.genre_ids = genre_ids
-        self.original_language = original_language
-        self.original_title = original_title
-        self.overview = overview
-        self.popularity = popularity
-        self.poster_path = poster_path
-        self.release_date = release_date
-        self.vote_average = vote_average
-        self.vote_count = vote_count
-    }
 
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)

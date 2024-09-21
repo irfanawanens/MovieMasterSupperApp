@@ -42,6 +42,9 @@
 		34CDB6412C9DAE9900D6F5E3 /* MovieLitingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CDB6402C9DAE9900D6F5E3 /* MovieLitingViewModel.swift */; };
 		34CDB6432C9DAEDD00D6F5E3 /* Observeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CDB6422C9DAEDD00D6F5E3 /* Observeable.swift */; };
 		34CDB6462C9DBFE400D6F5E3 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CDB6452C9DBFE400D6F5E3 /* URL+Extension.swift */; };
+		34EDB00B2C9EC1A300378490 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDB00A2C9EC1A300378490 /* Utilities.swift */; };
+		34EDB00D2C9ED6E700378490 /* MMCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDB00C2C9ED6E700378490 /* MMCache.swift */; };
+		34EDB00E2C9ED6E700378490 /* MMCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDB00C2C9ED6E700378490 /* MMCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,8 @@
 		34CDB6402C9DAE9900D6F5E3 /* MovieLitingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLitingViewModel.swift; sourceTree = "<group>"; };
 		34CDB6422C9DAEDD00D6F5E3 /* Observeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observeable.swift; sourceTree = "<group>"; };
 		34CDB6452C9DBFE400D6F5E3 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		34EDB00A2C9EC1A300378490 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		34EDB00C2C9ED6E700378490 /* MMCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				34CDB6422C9DAEDD00D6F5E3 /* Observeable.swift */,
+				34EDB00A2C9EC1A300378490 /* Utilities.swift */,
+				34EDB00C2C9ED6E700378490 /* MMCache.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -558,6 +565,8 @@
 				340362C82C9BFAA800CAFE4D /* MovieListDIContainer.swift in Sources */,
 				340362922C9BF02A00CAFE4D /* AppDelegate.swift in Sources */,
 				340362DF2C9C56FE00CAFE4D /* Endpoints.swift in Sources */,
+				34EDB00D2C9ED6E700378490 /* MMCache.swift in Sources */,
+				34EDB00B2C9EC1A300378490 /* Utilities.swift in Sources */,
 				340362942C9BF02A00CAFE4D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,6 +576,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				340362A92C9BF02D00CAFE4D /* MovieMasterDetailAppTests.swift in Sources */,
+				34EDB00E2C9ED6E700378490 /* MMCache.swift in Sources */,
 				340362C92C9BFAA800CAFE4D /* MovieListDIContainer.swift in Sources */,
 				340362E42C9C6E0800CAFE4D /* MMDBaseVC.swift in Sources */,
 			);
