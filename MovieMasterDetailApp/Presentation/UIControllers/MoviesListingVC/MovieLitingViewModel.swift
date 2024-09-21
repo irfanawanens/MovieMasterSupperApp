@@ -32,19 +32,6 @@ class MovieLitingViewModel {
             }
         })
     }
-    
-//    
-//    func getPopularPoginationMovies(page: Int){
-//        myRepository?.MoviesListWithPagination(page: page, completion: { result in
-//            switch result{
-//            case .success(let data):
-//                self.responseData.value = data
-//            case .failure(let error):
-//                self.setError(error.localizedDescription)
-//            }
-//        })
-//    }
-//    
     private func setError(_ message: String) {
         self.errorMessage.property = message
     }

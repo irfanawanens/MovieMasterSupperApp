@@ -45,6 +45,7 @@
 		34EDB00B2C9EC1A300378490 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDB00A2C9EC1A300378490 /* Utilities.swift */; };
 		34EDB00D2C9ED6E700378490 /* MMCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDB00C2C9ED6E700378490 /* MMCache.swift */; };
 		34EDB00E2C9ED6E700378490 /* MMCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDB00C2C9ED6E700378490 /* MMCache.swift */; };
+		34EDB0122C9F549F00378490 /* MoviesUseCaseImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDB0112C9F549F00378490 /* MoviesUseCaseImplementationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		34CDB6452C9DBFE400D6F5E3 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		34EDB00A2C9EC1A300378490 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		34EDB00C2C9ED6E700378490 /* MMCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMCache.swift; sourceTree = "<group>"; };
+		34EDB0112C9F549F00378490 /* MoviesUseCaseImplementationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUseCaseImplementationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				340362A82C9BF02D00CAFE4D /* MovieMasterDetailAppTests.swift */,
+				34EDB0112C9F549F00378490 /* MoviesUseCaseImplementationTests.swift */,
 			);
 			path = MovieMasterDetailAppTests;
 			sourceTree = "<group>";
@@ -208,9 +211,9 @@
 		340362C32C9BF6C800CAFE4D /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				34EDB0102C9F52B500378490 /* Presistant */,
 				340362D42C9BFE9C00CAFE4D /* NetworkServices */,
 				340362D32C9BFE9900CAFE4D /* RepositoryImplementations */,
-				340362D22C9BFE9600CAFE4D /* Presistant */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -284,7 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				340362D12C9BFDC000CAFE4D /* ResponseModels */,
-				340362D02C9BFDBC00CAFE4D /* RequestModels */,
+				34EDB00F2C9F44DA00378490 /* RequestModels */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -297,26 +300,12 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
-		340362D02C9BFDBC00CAFE4D /* RequestModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RequestModels;
-			sourceTree = "<group>";
-		};
 		340362D12C9BFDC000CAFE4D /* ResponseModels */ = {
 			isa = PBXGroup;
 			children = (
 				340362F42C9C7D3600CAFE4D /* MoviesResponseModel.swift */,
 			);
 			path = ResponseModels;
-			sourceTree = "<group>";
-		};
-		340362D22C9BFE9600CAFE4D /* Presistant */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presistant;
 			sourceTree = "<group>";
 		};
 		340362D32C9BFE9900CAFE4D /* RepositoryImplementations */ = {
@@ -406,6 +395,20 @@
 				340362952C9BF02A00CAFE4D /* MovieDetailVC.swift */,
 			);
 			path = MovieDetailVC;
+			sourceTree = "<group>";
+		};
+		34EDB00F2C9F44DA00378490 /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		34EDB0102C9F52B500378490 /* Presistant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presistant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -578,6 +581,7 @@
 				340362A92C9BF02D00CAFE4D /* MovieMasterDetailAppTests.swift in Sources */,
 				34EDB00E2C9ED6E700378490 /* MMCache.swift in Sources */,
 				340362C92C9BFAA800CAFE4D /* MovieListDIContainer.swift in Sources */,
+				34EDB0122C9F549F00378490 /* MoviesUseCaseImplementationTests.swift in Sources */,
 				340362E42C9C6E0800CAFE4D /* MMDBaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
