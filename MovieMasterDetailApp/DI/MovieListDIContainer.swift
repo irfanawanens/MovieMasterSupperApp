@@ -22,6 +22,6 @@ final class MoviesDIContainer {
   
     // MARK: - Repository
     private func moviesRepository() -> MoviesRepository {
-        return MovieRepositoryImplementation(networkService: NetworkService())
+        return MovieRepositoryImplementation(networkService: LiveNetworkService())
     }
 }

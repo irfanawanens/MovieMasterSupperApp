@@ -9,8 +9,7 @@ import Foundation
 
 
 class MovieRepositoryImplementation: MoviesRepository {
-    
-    
+ 
     let networkService: NetworkService
     
     init(networkService: NetworkService) {
@@ -23,6 +22,7 @@ class MovieRepositoryImplementation: MoviesRepository {
             case .success(let data):
                 UserInfoUtilities<MoviesListResponse>.saveModelInUserDefaults(key: "movies", userInfo: data)
                 completion(.success(data))
+          
             case .failure(let error):
                 if let response = UserInfoUtilities<MoviesListResponse>.loadModelFromUserDefaults(key: "movies").usersInfo {
                     completion(.success(response))
@@ -32,4 +32,6 @@ class MovieRepositoryImplementation: MoviesRepository {
             }
         }
     }
+    
+    
 }
